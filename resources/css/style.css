@@ -3,6 +3,7 @@
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  height: 100%;
 }
 
 .main-content {
@@ -39,8 +40,10 @@ html {
 header {
   position: fixed;
   width: 100%;
+  height: 85px;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+  z-index: 1;
 }
 
 header .content {
@@ -64,7 +67,7 @@ nav li {
 nav a {
   vertical-align: bottom;
   line-height: 1.6;
-  font-size: 1rem;
+  font-size: 16px;
   color: #4a4a4a;
 }
 
@@ -115,8 +118,12 @@ header .mobile {
 #sign-up-section {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
+  background-image: url('../images/banner-landingpage.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 43.5rem;
+  
 }
 
 #sign-up-cta {
@@ -124,6 +131,7 @@ header .mobile {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
+  margin: 110.625rem 6.25rem;
 }
 
 #sign-up-cta .content {
@@ -212,21 +220,26 @@ header .mobile {
 #features-section {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 5%;
+  padding-top: 4rem;
   background-color: #f3f3f3;
+  width: 100%;
 }
 
 .feature {
   flex: 1;
   padding: 2rem;
-  margin: 0px 1.25rem;
+  margin: 0px 2.38rem 46px 2.38rem;
   background-color: white;
 }
 
 .feature .image-container {
+  margin: 0 auto;
+  padding: 2rem 2rem 2.5rem 2rem;
+}
+
+.feature .image-container img {
   width: 90%;
   height: 65%;
-  margin: 0 auto;
 }
 
 .feature h2 {
@@ -294,8 +307,12 @@ header .mobile {
 }
 
 #filters-section .images-container {
+  display: flex;
+}
+
+#filters-section .images-container .image-container img {
+  display: block;
   max-width: 100%;
-  padding: 0 1%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -332,13 +349,17 @@ header .mobile {
 
 #quotes-section {
   background-color: #f3f3f3;
-}
-
-#quotes-section content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section content {
+  ;
+}
+
+#quotes-section span {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
